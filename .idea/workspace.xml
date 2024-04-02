@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d6c2dad-f9c7-4ab9-93ed-819d55542187" name="Changes" comment="initial commit">
+    <list default="true" id="0d6c2dad-f9c7-4ab9-93ed-819d55542187" name="Changes" comment="updated Smartphone">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/learning/shop/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/shop/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/learning/shop/Headphones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/shop/Headphones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/learning/shop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/shop/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/learning/shop/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/shop/Smartphone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/learning/shop/Televisions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/shop/Televisions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +26,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2eXlFzZcmrG4W5ChphnH94x4HmZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -33,15 +39,24 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/progetti-web/java/java-oop1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/progetti-web/java/java-oop1&quot;
   }
-}]]></component>
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-temurin-1.8.0_402-3183f394aec4-b51e62fd" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,11 +74,30 @@
       <option name="project" value="LOCAL" />
       <updated>1712060082958</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added readme">
+      <option name="closed" value="true" />
+      <created>1712060589790</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712060589790</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updated Product">
+      <option name="closed" value="true" />
+      <created>1712062033505</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712062033505</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="added readme" />
+    <MESSAGE value="updated Product" />
+    <MESSAGE value="updated Smartphone" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated Smartphone" />
   </component>
 </project>
