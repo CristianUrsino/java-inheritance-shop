@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d6c2dad-f9c7-4ab9-93ed-819d55542187" name="Changes" comment="updated Smartphone">
+    <list default="true" id="0d6c2dad-f9c7-4ab9-93ed-819d55542187" name="Changes" comment="added getSmartText in television">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/learning/shop/Headphones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/shop/Headphones.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/learning/shop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/shop/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/learning/shop/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/shop/Smartphone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/learning/shop/Televisions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/shop/Televisions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +88,39 @@
       <option name="project" value="LOCAL" />
       <updated>1712062033505</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated Smartphone">
+      <option name="closed" value="true" />
+      <created>1712065314801</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712065314801</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updated Television">
+      <option name="closed" value="true" />
+      <created>1712065448720</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712065448720</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Renamed Televisions in Television">
+      <option name="closed" value="true" />
+      <created>1712065484728</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712065484728</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added getSmartText in television">
+      <option name="closed" value="true" />
+      <created>1712065828246</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712065828246</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -98,6 +128,9 @@
     <MESSAGE value="added readme" />
     <MESSAGE value="updated Product" />
     <MESSAGE value="updated Smartphone" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated Smartphone" />
+    <MESSAGE value="updated Television" />
+    <MESSAGE value="Renamed Televisions in Television" />
+    <MESSAGE value="added getSmartText in television" />
+    <option name="LAST_COMMIT_MESSAGE" value="added getSmartText in television" />
   </component>
 </project>
