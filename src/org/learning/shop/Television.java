@@ -27,7 +27,10 @@ public class Television extends Product{
         return smart;
     }
     //altri metodi
+    public String getSmartText(){
+        return smart ? "smart" : "not smart";
+    }
     public String getInfo(){
-        return super.getInfo() + "\n\tdimensions: " + dimensions + "\n\tsmart: " + (smart ? "yes":"no");
+        return super.getInfo() + "\n\tdimensions: " + dimensions + "\n\tsmart: " + getSmartText();
     }
 }
