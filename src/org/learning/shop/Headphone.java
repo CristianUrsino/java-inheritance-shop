@@ -2,12 +2,12 @@ package org.learning.shop;
 
 import java.math.BigDecimal;
 
-public class Headphones extends Product{
+public class Headphone extends Product{
     //attributi
     private String color;
     private Boolean type;//0 wired, 1 wireless
     //costruttori
-    public Headphones(String name, String brand, BigDecimal price, BigDecimal vat, String color, Boolean type) {
+    public Headphone(String name, String brand, BigDecimal price, BigDecimal vat, String color, Boolean type) {
         super(name, brand, price, vat);
         this.color = color;
         this.type = type;

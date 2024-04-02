@@ -10,7 +10,7 @@ public class Main {
         System.out.println(sm1.getInfo());
         Television tv1 = new Television("pippo", "Q.Bell", BigDecimal.valueOf(150), BigDecimal.valueOf(0.21), BigDecimal.valueOf(19.24), true);
         System.out.println(tv1.getInfo());
-        Headphones hp1 = new Headphones("mii2", "realme", BigDecimal.valueOf(20), BigDecimal.valueOf(0.21), "black", true);
+        Headphone hp1 = new Headphone("mii2", "realme", BigDecimal.valueOf(20), BigDecimal.valueOf(0.21), "black", true);
         System.out.println(hp1.getInfo());
 
     }
