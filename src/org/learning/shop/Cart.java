@@ -1,7 +1,5 @@
 package org.learning.shop;
 //imports
-import com.sun.org.apache.xalan.internal.xsltc.DOM;
-
 import java.math.BigDecimal;
 import java.util.Scanner;
 public class Cart {
@@ -69,13 +67,17 @@ public class Cart {
                 }
             }while(brand.isEmpty());
             do{
-                //ciclo finchè il PREZZO è maggiore di 0
-                try {
-                    System.out.print("Enter price: ");
-                    price = new BigDecimal(scanner.nextLine());
-                }catch (Exception e){
-                    //setto price a 0 per ripetere il ciclo
-                    price = BigDecimal.ZERO;
+            //ciclo finchè il PREZZO è maggiore di 0
+                //salvo l'input in una string
+                String priceText;
+                System.out.print("Enter price: ");
+                priceText = scanner.nextLine();
+                if(StringIsNumber(priceText)){
+                    //se la stringa contiene solo numeri la assegno a price
+                    price = new BigDecimal(priceText);
+                }else{
+                    //altrimenti metto un valore che faccia ripetere il ciclo
+                    price = new BigDecimal(-1);
                 }
                 if(price.compareTo(BigDecimal.ZERO) < 0){
                     //se price minore di 0 output errore
@@ -83,16 +85,20 @@ public class Cart {
                 }
             }while(price.compareTo(BigDecimal.ZERO) < 0);
             do{
-                //ciclo finchè l'IVA è maggiore di 0
-                try {
-                    System.out.print("Enter vat: ");
-                    vat = new BigDecimal(scanner.nextLine());
-                }catch (Exception e){
-                    //setto price a 0 per ripetere il ciclo
-                    vat = BigDecimal.ZERO;
+            //ciclo finchè il VAT è maggiore di 0
+                //salvo l'input in una string
+                String vatText;
+                System.out.print("Enter vat: ");
+                vatText = scanner.nextLine();
+                if(StringIsNumber(vatText)){
+                    //se la stringa contiene solo numeri la assegno a vat
+                    vat = new BigDecimal(vatText);
+                }else{
+                    //altrimenti metto un valore che faccia ripetere il ciclo
+                    vat = new BigDecimal(-1);
                 }
                 if(vat.compareTo(BigDecimal.ZERO) < 0){
-                    //se price minore di 0 output errore
+                    //se vat minore di 0 output errore
                     System.out.println("Error the field vat must be a positive number, please try again");
                 }
             }while(vat.compareTo(BigDecimal.ZERO) < 0);
@@ -124,13 +130,17 @@ public class Cart {
                     BigDecimal dimensions;
                     int smart; // int invece di boolean per velocizzare l'output
                     do{
-                        //ciclo finchè la DIMENZIONE è maggiore di 0
-                        try {
-                            System.out.print("Enter dimensions: ");
-                            dimensions = new BigDecimal(scanner.nextLine());
-                        }catch (Exception e){
-                            //setto la dimenzione a 0 per ripetere il ciclo
-                            dimensions = BigDecimal.ZERO;
+                    //ciclo finchè il DIMENSIONS è maggiore di 0
+                        //salvo l'input in una string
+                        String dimensionsText;
+                        System.out.print("Enter dimensions: ");
+                        dimensionsText = scanner.nextLine();
+                        if(StringIsNumber(dimensionsText)){
+                            //se la stringa contiene solo numeri la assegno a dimensions
+                            dimensions = new BigDecimal(dimensionsText);
+                        }else{
+                            //altrimenti metto un valore che faccia ripetere il ciclo
+                            dimensions = new BigDecimal(-1);
                         }
                         if(dimensions.compareTo(BigDecimal.ZERO) < 0){
                             //se dimensions minore di 0 output errore
@@ -192,5 +202,14 @@ public class Cart {
         }
         //chiudo lo scanner
         scanner.close();
+    }
+    public static boolean StringIsNumber(String s){
+        //ritorna 1 se ogni carattere nella stringa è un numero
+        for (int i = 0; i < s.length(); i++) {
+            if(!Character.isDigit(s.charAt(i))){
+                return false;
+            }
+        }
+        return true;
     }
 }
