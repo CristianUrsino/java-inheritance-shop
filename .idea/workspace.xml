@@ -7,6 +7,10 @@
     <list default="true" id="0d6c2dad-f9c7-4ab9-93ed-819d55542187" name="Changes" comment="added Cart and deleated Main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/learning/shop/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/shop/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/learning/shop/Headphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/shop/Headphone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/learning/shop/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/shop/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/learning/shop/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/shop/Smartphone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/learning/shop/Television.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/shop/Television.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,18 +40,18 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Cart.executor": "Run",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/progetti-web/java/java-oop1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Cart.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/progetti-web/java/java-oop1&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

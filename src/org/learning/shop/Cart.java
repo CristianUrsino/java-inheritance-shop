@@ -22,6 +22,22 @@ public class Cart {
                 System.out.println("Error the size of cart must be a integer positive number, please try again");
             }
         }while(sizeCart <= 0);
+        //dichiaro la flag dell'utente registrato/tesserato
+        int isRegistered;
+        do{
+            //ciclo finchè l'utente non inserisce un valore valido
+            try{
+                System.out.print("Digit 1 if you are registered, digit 0 if you aren't registered: ");
+                isRegistered = Integer.parseInt(scanner.nextLine());
+            }catch (Exception e){
+                //setto a -1 per ripetere il ciclo
+                isRegistered = -1;
+            }
+            if(isRegistered < 0 || isRegistered > 1){
+                //se non è 1 o 0 mando messaggio di errore
+                System.out.println("Error the number must be a integer positive number between 0 and 1, please try again");
+            }
+        }while(isRegistered < 0 || isRegistered > 1);
         //dichiaro l'array di prodotti e la variabile per la scelta del tipo di prodotto
         Product[] cart = new Product[sizeCart];
         int typeProduct;
@@ -121,7 +137,7 @@ public class Cart {
                         }
                     }while (memory<0);
                     //inizializzo il prodotto con i dati forniti
-                    product = new Smartphone(name,brand,price,vat,memory);
+                    product = new Smartphone(name,brand,price,vat,isRegistered != 0,memory);
                     //stampo le informazioni del prodotto
                     System.out.println("\n" + product.getInfo() + "\n\n");
                     break;
@@ -162,7 +178,7 @@ public class Cart {
                         }
                     }while(smart < 0 || smart > 1 );
                     //inizializzo il prodotto con i dati forniti
-                    product = new Television(name,brand,price,vat,dimensions, smart != 0); //se diverso da 0 = 1
+                    product = new Television(name,brand,price,vat,isRegistered != 0,dimensions, smart != 0); //se diverso da 0 = 1
                     //stampo le informazioni del prodotto
                     System.out.println("\n" + product.getInfo() + "\n\n");
                     break;
@@ -194,7 +210,7 @@ public class Cart {
                         }
                     }while(type < 0 || type > 1 );
                     //inizializzo il prodotto con i dati forniti
-                    product = new Headphone(name,brand,price,vat,color, type != 0); //se diverso da 0 = 1
+                    product = new Headphone(name,brand,price,vat,isRegistered != 0,color, type != 0); //se diverso da 0 = 1
                     //stampo le informazioni del prodotto
                     System.out.println("\n" + product.getInfo() + "\n\n");
                     break;
@@ -204,9 +220,9 @@ public class Cart {
         scanner.close();
     }
     public static boolean StringIsNumber(String s){
-        //ritorna 1 se ogni carattere nella stringa è un numero
+        //ritorna 1 se ogni carattere nella stringa è un numero o un punto
         for (int i = 0; i < s.length(); i++) {
-            if(!Character.isDigit(s.charAt(i))){
+            if(!Character.isDigit(s.charAt(i)) && s.charAt(i) != '.'){
                 return false;
             }
         }
