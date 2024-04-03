@@ -9,10 +9,11 @@ public class Smartphone extends Product{
     private BigInteger imei;
     private int memory;
     //costruttori
-    public Smartphone(String name, String brand, BigDecimal price, BigDecimal vat, int memory) {
-        super(name, brand, price, vat);
+    public Smartphone(String name, String brand, BigDecimal price, BigDecimal vat,boolean isRegistered, int memory) {
+        super(name, brand, price, vat, isRegistered);
         imei = generateImei();
         this.memory = memory;
+        if(memory <= 32) discount = new BigDecimal(0.05);
     }
     //metodi per il costruttore
     private BigInteger generateImei(){
@@ -37,6 +38,7 @@ public class Smartphone extends Product{
         return memory;
     }
     //altri metodi
+    @Override
     public String getInfo(){
         return super.getInfo() + "\n\timei: " + imei + "\n\tmemory: " + memory;
     }

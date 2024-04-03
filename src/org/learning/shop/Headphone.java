@@ -7,10 +7,11 @@ public class Headphone extends Product{
     private String color;
     private Boolean type;//0 wired, 1 wireless
     //costruttori
-    public Headphone(String name, String brand, BigDecimal price, BigDecimal vat, String color, Boolean type) {
-        super(name, brand, price, vat);
+    public Headphone(String name, String brand, BigDecimal price, BigDecimal vat,Boolean isRegistered, String color, Boolean type) {
+        super(name, brand, price, vat, isRegistered);
         this.color = color;
         this.type = type;
+        if(!type) discount = new BigDecimal(0.07);
     }
     //setter
     public void setColor(String color) {
@@ -30,6 +31,7 @@ public class Headphone extends Product{
     public String getTypeText(){
         return type ? "wired" : "wireless";
     }
+    @Override
     public String getInfo(){
         return super.getInfo() + "\n\tcolor: " + color + "\n\ttype: " + getTypeText();
     }

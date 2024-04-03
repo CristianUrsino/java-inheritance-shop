@@ -7,10 +7,11 @@ public class Television extends Product{
     private BigDecimal dimensions;
     private Boolean smart;
     //costruttori
-    public Television(String name, String brand, BigDecimal price, BigDecimal vat, BigDecimal dimensions, Boolean smart) {
-        super(name, brand, price, vat);
+    public Television(String name, String brand, BigDecimal price, BigDecimal vat,boolean isRegistered, BigDecimal dimensions, Boolean smart) {
+        super(name, brand, price, vat, isRegistered);
         this.dimensions = dimensions;
         this.smart = smart;
+        if(!smart) discount = new BigDecimal(0.10);
     }
     //setter
     public void setDimensions(BigDecimal dimensions) {
@@ -30,6 +31,7 @@ public class Television extends Product{
     public String getSmartText(){
         return smart ? "smart" : "not smart";
     }
+    @Override
     public String getInfo(){
         return super.getInfo() + "\n\tdimensions: " + dimensions + "\n\tsmart: " + getSmartText();
     }
